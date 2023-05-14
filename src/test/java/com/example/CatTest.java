@@ -38,8 +38,8 @@ public class CatTest {
     @Test
     public void getFood_Return_Feline_List() throws Exception { // throws показывает, что в коде может быть исключение Exception
         List<String> felineFood = List.of("Животные", "Птицы", "Рыба");
-        Feline feline1 = new Feline();
-        Cat cat = new Cat(feline1);
+        Feline feline = new Feline();
+        Cat cat = new Cat(feline);
         assertEquals("Список еды не соответствует Кошачьим = Хищнику", felineFood, cat.getFood());
     }
 
