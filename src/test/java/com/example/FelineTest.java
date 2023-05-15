@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 
 public class FelineTest {
 
+
     // Проверяем, что возвращается верный список
     @Test
     public void eatMeat_Feline_True() throws Exception {
