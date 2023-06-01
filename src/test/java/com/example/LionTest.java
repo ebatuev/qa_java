@@ -62,4 +62,12 @@ public class LionTest {
         Assert.assertEquals(trowException.getMessage(), exceptionExpectedMessage);
     }
 
+    @Test
+    public void doesHaveManeLionIsFemaleTrue() throws Exception {
+        Lion lion = new Lion("Самка", feline);
+        boolean expectedHasMane = false;
+        boolean actualHasMane = lion.doesHaveMane();
+        assertEquals("У львицы нет гривы", expectedHasMane, actualHasMane);
+    }
+
 }
